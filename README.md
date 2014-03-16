@@ -168,7 +168,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 ```
-debes poner los siguientes códigos en el terminal
+debes poner los siguientes códigos en el terminal [ver](http://javierin.com/2010/04/27/problema-lc_ctype-lc_messages-lc_all-ubuntu/)
 ```
 LANG=en_GB.UTF-8
 LC_ALL=en_GB.UTF-8
@@ -229,6 +229,13 @@ iniciar postgresql
 ```
 chmod -R 777 /home/myproject/media/
 ```
+
+PIL
+```
+sudo apt-get install libjpeg-dev
+
+```
+
 
 
 
