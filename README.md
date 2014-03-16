@@ -226,5 +226,9 @@ iniciar postgresql
 /etc/init.d/postgresql start
 ```
 
+```
+chmod -R 777 /home/myproject/media/
+```
+
 
 
