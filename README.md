@@ -221,4 +221,10 @@ netstat -tulpn | grep 8001
 kill -9 13928(PID)
 ```
 
+iniciar postgresql
+```
+/etc/init.d/postgresql start
+```
+
+
 
