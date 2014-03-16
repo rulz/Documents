@@ -144,13 +144,73 @@ sudo service nginx restart
 /opt/Envs/env1/bin/gunicorn -c /opt/Envs/env1/gunicorn_config.py myproject.wsgi
 ```
 
+***11."Instalar PostgreSQL"***
+```
+sudo apt-get install postgresql postgresql-contrib
+```
 
 
+***11.1"MAC"***
 
+si aparece un error como este
+```
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LC_TIME = "es_ES.utf-8",
+        LC_MONETARY = "es_ES.utf-8",
+        LC_CTYPE = "es_ES.utf-8",
+        LC_COLLATE = "es_ES.utf-8",
+        LC_MESSAGES = "es_ES.utf-8",
+        LC_NUMERIC = "es_ES.utf-8",
+        LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+```
+debes poner los siguientes códigos en el terminal
+```
+LANG=en_GB.UTF-8
+LC_ALL=en_GB.UTF-8
+LANGUAGE=en_GB.UTF-8
+```
+luego debes desinstalar y volver a instalar
+```
+sudo apt-get remove postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install libpq-dev python-dev
+```
 
+***12."configurar PostgreSQL"***
+```
+sudo su - postgres
+createdb mydb
+createuser -P
+psql
+GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+```
 
+luego en el settings.py de tu proyecto
+```
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': 'mydb',                      # Or path to database file if using sqlite3.
+            # The following settings are not used with sqlite3:
+            'USER': 'myuser',
+            'PASSWORD': 'password',
+            'HOST': 'localhost',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
+            'PORT': '',                      # Set to empty string for default.
+        }
+    }
+```
+***12."Install psycopg2"***
+```
+pip install psycopg2
+```
 
-
-
-
+***13."syncdb django"***
+```
+python manage.py syncdb
+```
 
