@@ -214,3 +214,11 @@ pip install psycopg2
 python manage.py syncdb
 ```
 
+###Ubuntu
+para puerto
+```
+sudo netstat -ap | grep :8001
+kill -9 13928(PID)
+```
+
+
