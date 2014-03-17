@@ -1,0 +1,8 @@
+SQLite
+=========
+
+***Mostrar tabla ***
+```
+.tables
+```
+
