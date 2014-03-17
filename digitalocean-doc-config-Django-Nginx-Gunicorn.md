@@ -249,7 +249,7 @@ iniciar postgresql
 chmod -R 777 /home/myproject/media/
 ```
 
-PIL
+Librerías de imágenes (para poder instalar PIL o PILLOW)
 ```
 sudo apt-get install libjpeg-dev
 
