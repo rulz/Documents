@@ -28,6 +28,15 @@ source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv env1
 ```
 
+***3.1.1 "Opcional pero recomendado"***
+
+Dejar todo lo que está en el punto 3.1 en el siguiente archivo, (también recomendado para las variables de entorno)
+```
+vim ~/.profile
+source ~/.profile
+source ~/.bashrc
+```
+
 **3.2"Activar y descativar Virtualenvwrapper"**
 
 * Activar
