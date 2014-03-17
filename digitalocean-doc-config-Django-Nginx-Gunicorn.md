@@ -30,9 +30,19 @@ mkvirtualenv env1
 
 ***3.1.1 "Opcional pero recomendado"***
 
-Dejar todo lo que está en el punto 3.1 en el siguiente archivo, (también recomendado para las variables de entorno)
+Dejar éstos comando que salen en el punto 3.1 en el siguiente archivo, (también recomendado para las variables de entorno)
 ```
 vim ~/.profile
+```
+
+Pegar comandos 
+```
+WORKON_HOME=/opt/Envs
+source /usr/local/bin/virtualenvwrapper.sh
+```
+Guardar los cambios y luego
+
+```
 source ~/.profile
 source ~/.bashrc
 ```
