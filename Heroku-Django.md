@@ -87,9 +87,19 @@ git commit -am "mi primer commit para subir mi proyecto"
 git push heroku master
 ```
 
-se sube el proyecto, Heroku identifica que lenguaje estamos ocupando y empieza a instalar las cosas necesaria para que corra nuestro proyecto en sus servidores.
+se sube el proyecto, Heroku identifica que lenguaje estamos ocupando y empieza a instalar lo que está en requirements.txt las cosas necesaria para que corra nuestro proyecto en sus servidores.
 
-;)
+***6. Como hacer un syncdb en Heroku***
+
+```
+heroku run ./manage.py syncdb
+```
+
+***7. Como entrar al shell en Heroku***
+
+```
+heroku run ./manage.py shell
+```
 
 
 
