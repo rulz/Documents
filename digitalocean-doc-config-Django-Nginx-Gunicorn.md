@@ -254,7 +254,10 @@ Librerías de imágenes (para poder instalar PIL o PILLOW)
 sudo apt-get install libjpeg-dev
 
 ```
-
+ir al proyecto Workon
+```
+echo `pwd` | cat > $VIRTUAL_ENV/.project 
+```
 
 
 
