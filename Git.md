@@ -33,6 +33,23 @@ pull (actulizar o sea baja cambios)
 git pull
 ```
 
+vim ~/.gitconfig
+```
+[user]
+        name = Raul
+[alias]
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+```
+
+Eliminar branch
+```
+git branch <nombre-del-brach> -d
+```
+
+
 
 
 
