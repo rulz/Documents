@@ -49,6 +49,11 @@ Eliminar branch
 git branch <nombre-del-brach> -d
 ```
 
+push al branch que estoy parado
+```
+git push -u origin MejorarDetalleCompra
+```
+
 
 
 
