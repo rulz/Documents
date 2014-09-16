@@ -54,7 +54,10 @@ push al branch que estoy parado
 git push -u origin MejorarDetalleCompra
 ```
 
-
+instalar directo de git
+```
+pip install -e git+git@github.com:rulz/pack.git#egg=pack
+```
 
 
 
