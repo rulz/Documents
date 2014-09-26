@@ -207,6 +207,9 @@ createdb mydb
 createuser -P
 psql
 GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+
+cambair clave a usuario
+alter user usuario with password '1234'; 
 ```
 
 luego en el settings.py de tu proyecto
