@@ -241,6 +241,8 @@ para puerto
 ```
 netstat -tulpn | grep 8001
 kill -9 13928(PID)
+
+fuser -k 80/tcp 
 ```
 
 iniciar postgresql
