@@ -225,6 +225,8 @@ fuentes
 http://agiliq.com/blog/2014/08/deploying-a-django-app-on-amazon-ec2-instance/
 
 https://platzi.com/blog/django-aws/
+
+https://www.youtube.com/watch?v=Kg29bvYyLSM
 ```
 
 
