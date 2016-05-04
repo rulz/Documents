@@ -4,7 +4,8 @@ Configurar Django, Nginx y Gunicorn en Amazon
 Por mi parte instalé Ubuntu Server 14.04 LTS
 
 ---
-**1. "Conectarse al servidor Amazon"
+
+**1. "Conectarse al servidor Amazon"**
 ```
 ssh -i "llave.pem" ubuntu@ec2-XX-XX-X-XXX.compute-X.amazonaws.com
 ```
@@ -22,18 +23,18 @@ export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 sudo dpkg-reconfigure locales
 ```
-**3. "Instalar packetes"
+**3. "Instalar packetes"**
 ```
 sudo apt-get install python-pip
 sudo apt-get install python-dev
 sudo apt-get install build-essential
 ```
-**4. "Entorno virtual"
+**4. "Entorno virtual"**
 ```
 sudo pip install virtualenvwrapper
 ```
 
-**5. "Configuración del entorno virtual"
+**5. "Configuración del entorno virtual"**
 ```
 vim ~/.profile
 ```
@@ -48,7 +49,7 @@ una vez agregado lo anterior
 source ~/.profile
 ```
 
-**6. "Craer un entorno con workon"
+**6. "Craer un entorno con workon"**
 ```
 mkvirtualenv appname
 workon appname
