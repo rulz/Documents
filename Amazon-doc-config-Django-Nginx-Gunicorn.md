@@ -44,6 +44,7 @@ se agrega los siguientes código en profile
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
+
 una vez agregado lo anterior
 ```
 source ~/.profile
@@ -82,6 +83,7 @@ pip install -r requirements.txt
 ```
 
 **9."Instalar [nginx](http://blog.desdelinux.net/nginx-una-interesante-alternativa-a-apache/)"**
+
 ```
 sudo apt-get install nginx
 
@@ -89,7 +91,6 @@ sudo service nginx start
 sudo service nginx stop
 sudo service nginx restart
 
-```
 sudo vim /etc/nginx/nginx.conf
 ```
 
@@ -110,15 +111,18 @@ error_log  /home/ubuntu/myproject/nginx-error.log info;
 ```
 
 **10."Instalar [gunicorn](http://blog.manuelviera.es/gunicorn/)"**
+
 ```
 pip install gunicorn
 ```
 
-**11. "creamos el script .sh"
+**11. "creamos el script .sh"**
+
 ```
 cd ~/myproject
 
 vim start_gunicorn.sh
+
 ```
 agregar
 
@@ -202,6 +206,7 @@ sudo apt-get install libpq-dev python-dev
 ```
 
 ***15."configurar PostgreSQL"***
+
 ```
 sudo su postgres
 psql
