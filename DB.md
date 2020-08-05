@@ -12,3 +12,7 @@ Load Database
 ```
 pg_restore -U postgres -h localhost -p 5432 -d database < /Users/rulz/Proyectos/SiteRulz/staging.dump
 ```
+
+or Load Database
+
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d database -p 5432 < /Users/rulz/Proyectos/SiteRulz/staging.dump
