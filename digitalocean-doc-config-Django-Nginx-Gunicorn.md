@@ -307,3 +307,26 @@ echo `pwd` | cat > $VIRTUAL_ENV/.project
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-20-04
 
+```
+server {
+    listen 80;
+    server_name 137.184.154.86;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static {
+        #root /home/rulz/mineducEDE;
+        alias /home/rulz/mineducEDE/staticfiles;
+    }
+
+    location /media {
+        #root /home/rulz/mineducEDE;
+        alias /home/rulz/mineducEDE/mediafiles;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/run/gunicorn.sock;
+    }
+}
+```
+
