@@ -101,8 +101,43 @@ heroku run ./manage.py syncdb
 heroku run ./manage.py shell
 ```
 
+***8. Update DB Plan Heroki***
 
+a). crea la db nueva 
 
+b). Información de las db instaladas
+```
+heroku pg:info --app example-app
 
+=== HEROKU_POSTGRESQL_WHITE_URL
+Plan:                  Basic
+Status:                Available
+Connections:           0/20
+PG Version:            14.6
+
+```
+
+c). poner en matención la app
+```
+heroku maintenance:on --app example-app
+```
+
+d). copiar la db a new db
+```
+heroku pg:copy DATABASE_URL HEROKU_POSTGRESQL_PINK --app example-app
+```
+
+e). actulizar la db que voy a ocupar nueva
+```
+heroku pg:promote HEROKU_POSTGRESQL_PINK --app example-app
+
+###monitoriar
+heroku pg:wait --app example-app
+```
+
+f). sacar de mantencion
+```
+heroku maintenance:off --app example-app
+```
 
 
