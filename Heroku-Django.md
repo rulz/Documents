@@ -101,12 +101,13 @@ heroku run ./manage.py syncdb
 heroku run ./manage.py shell
 ```
 
-***8. Update DB Plan Heroki***
+***8. Update DB Plan Heroku***
 
 a). crea la db nueva 
 
 b). Información de las db instaladas
 ```
+## https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases#1-provision-a-new-database
 heroku pg:info --app example-app
 
 === HEROKU_POSTGRESQL_WHITE_URL
