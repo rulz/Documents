@@ -1,6 +1,7 @@
 # Documents
 script en javascript para google search console, retirar url 1 x 1 automatized 
 
+```
 //Poner acá tu listado de urls.
 var array = [
 	'url', 
@@ -54,3 +55,4 @@ async function deleteUrl(){
 }
 
 deleteUrl();
+```
